@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INSTITUCIÓN EDUCATIVA RURAL SANTA MARÍA - RESERVA DE DEPORTES</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f6f9fc;
+      color: #333;
+    }
+
+    header {
+      background: #b5d8f7;
+      color: #003366;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: #fff;
+    }
+
+    section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.55);
+      z-index: 0;
+    }
+
+    .formulario {
+      position: relative;
+      z-index: 1;
+      max-width: 420px;
+      background: rgba(255,255,255,0.9);
+      margin: auto;
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+      color: #222;
+    }
+
+    .formulario h2 {
+      text-align: center;
+      margin-top: 0;
+      color: #003366;
+    }
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin: 10px 0 4px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #2563eb;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #1e40af;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .formulario { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    INSTITUCIÓN EDUCATIVA RURAL SANTA MARÍA <br>
+    RESERVA DE DEPORTES
+  </header>
+
+  <!-- VOLEIBOL -->
+  <section style="background-image: url('voleibol.jpg');">
+    <form class="formulario" action="https://formsubmit.co/santamariareserva1@gmail.com" method="POST">
+      <h2>Reserva de Voleibol</h2>
+      <input type="hidden" name="Deporte" value="Voleibol">
+      <label>Nombre del estudiante:</label>
+      <input type="text" name="Nombre" required>
+      <label>Día de reserva:</label>
+      <input type="date" name="Día" required>
+      <label>Tiempo de duración (en horas):</label>
+      <input type="number" name="Duración" min="1" max="5" required>
+      <button type="submit">Enviar reserva</button>
+      <input type="hidden" name="_next" value="https://formsubmit.co/thanks.html">
+      <input type="hidden" name="_subject" value="Nueva reserva de voleibol">
+    </form>
+  </section>
+
+  <!-- TENIS DE MESA -->
+  <section style="background-image: url('tenis de mesa.jpg');">
+    <form class="formulario" action="https://formsubmit.co/santamariareserva1@gmail.com" method="POST">
+      <h2>Reserva de Tenis de Mesa</h2>
+      <input type="hidden" name="Deporte" value="Tenis de Mesa">
+      <label>Nombre del estudiante:</label>
+      <input type="text" name="Nombre" required>
+      <label>Día de reserva:</label>
+      <input type="date" name="Día" required>
+      <label>Tiempo de duración (en horas):</label>
+      <input type="number" name="Duración" min="1" max="5" required>
+      <button type="submit">Enviar reserva</button>
+      <input type="hidden" name="_next" value="https://formsubmit.co/thanks.html">
+      <input type="hidden" name="_subject" value="Nueva reserva de tenis de mesa">
+    </form>
+  </section>
+
+  <!-- BALONCESTO -->
+  <section style="background-image: url('baloncesto.jpg');">
+    <form class="formulario" action="https://formsubmit.co/santamariareserva1@gmail.com" method="POST">
+      <h2>Reserva de Baloncesto</h2>
+      <input type="hidden" name="Deporte" value="Baloncesto">
+      <label>Nombre del estudiante:</label>
+      <input type="text" name="Nombre" required>
+      <label>Día de reserva:</label>
+      <input type="date" name="Día" required>
+      <label>Tiempo de duración (en horas):</label>
+      <input type="number" name="Duración" min="1" max="5" required>
+      <button type="submit">Enviar reserva</button>
+      <input type="hidden" name="_next" value="https://formsubmit.co/thanks.html">
+      <input type="hidden" name="_subject" value="Nueva reserva de baloncesto">
+    </form>
+  </section>
+
+  <!-- FÚTBOL -->
+  <section style="background-image: url('balón-de-fútbol-11002436.webp');">
+    <form class="formulario" action="https://formsubmit.co/santamariareserva1@gmail.com" method="POST">
+      <h2>Reserva de Fútbol</h2>
+      <input type="hidden" name="Deporte" value="Fútbol">
+      <label>Nombre del estudiante:</label>
+      <input type="text" name="Nombre" required>
+      <label>Día de reserva:</label>
+      <input type="date" name="Día" required>
+      <label>Tiempo de duración (en horas):</label>
+      <input type="number" name="Duración" min="1" max="5" required>
+      <button type="submit">Enviar reserva</button>
+      <input type="hidden" name="_next" value="https://formsubmit.co/thanks.html">
+      <input type="hidden" name="_subject" value="Nueva reserva de fútbol">
+    </form>
+  </section>
+
+  <!-- AJEDREZ -->
+  <section style="background-image: url('ajedrez.webp');">
+    <form class="formulario" action="https://formsubmit.co/santamariareserva1@gmail.com" method="POST">
+      <h2>Reserva de Ajedrez</h2>
+      <input type="hidden" name="Deporte" value="Ajedrez">
+      <label>Nombre del estudiante:</label>
+      <input type="text" name="Nombre" required>
+      <label>Día de reserva:</label>
+      <input type="date" name="Día" required>
+      <label>Tiempo de duración (en horas):</label>
+      <input type="number" name="Duración" min="1" max="5" required>
+      <button type="submit">Enviar reserva</button>
+      <input type="hidden" name="_next" value="https://formsubmit.co/thanks.html">
+      <input type="hidden" name="_subject" value="Nueva reserva de ajedrez">
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Institución Educativa Rural Santa María | Proyecto Feria de las Ciencias
+  </footer>
+
+</body>
+</html>
